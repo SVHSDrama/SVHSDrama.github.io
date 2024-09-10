@@ -77,6 +77,12 @@
         Secret Buddies Responses
     </button>
 </a>
+        <br>
+        <br>
+        <a href="https://docs.google.com/spreadsheets/d/1lkzL97gq_KL6cJGNIAmpIJ2v4lW3uYghJDylB36qULc/edit?gid=1376527461#gid=1376527461">
+            <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
+            Drama Attendance tracker
+        </a>
 <br>
 <h3 style="color:rgb(0,0,0)">Contact Us</h3>
 <hr style="background-color:rgb(27,27,27)">
