@@ -15,21 +15,21 @@
         <H3>Important Forms</H3>
         <hr>
 <a href="https://forms.gle/mmDqCsZLSNkTCFu7A">
-<button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+<button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
     Hell Week and T-Shirt order form
 </button>
 </a>
 <br>
 <br>
 <a href="https://forms.gle/auDkWqDyrvKbBA5HA">
-    <button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+    <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
         Secret Buddies Crew
     </button>
 </a>
 <br>
 <br>
 <a href="https://forms.gle/1eBCZrPRJFJAEEee9">
-    <button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+    <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
         Secret Buddies Cast
     </button>
 </a>
@@ -39,14 +39,14 @@
 <hr>
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1_QDLcyupQLAJr0KfuxQKabIUmlf9twwXlrFhsdM5JIY/edit?gid=1770155719#gid=1770155719">
-<button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+<button style="background-color:rgb(117, 79, 168); color:rgbrgb(0,0,0) ">
     Drama Merch Tracker
 </button>
 </a>
 <br>
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1BaqWD1OztTLE8-aS0YKSq6AFi9jVVkYPUn9ZyNwRWZc/edit?usp=sharing">
-    <button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+    <button style="background-color:rgb(117, 79, 168); color:rgbrgb(0,0,0) ">
         Hell Week and Shirt Orders
     </button>
 </a>
