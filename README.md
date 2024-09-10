@@ -11,6 +11,11 @@
             Attendance
         </button>
         </a>
+        <a herf="Notes.html">
+            <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
+            Notes
+        </button>
+        </a>
         <br>
         <H3 style="color:rgb(0,0,0)">Important Forms</H3>
         <hr style="background-color:rgb(27,27,27)">
