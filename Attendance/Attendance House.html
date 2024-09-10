@@ -1,53 +1,50 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <h1>House Attendance </h1>
-    <title>House Attendance</title>
-    <hr>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox State</title>
 </head>
-<body style="background-color:rgb(128, 128, 128);">
-<input type="checkbox" id="Name1">
-<label for="Name1">Insert Name</label>
-<br>
-<input type="checkbox" id="Name2">
-<label for="Name1">Insert name</label>
-<br>
-<input type="checkbox" id="Name3">
-<label for="Name1">Insert Name</label>
-<br>
-<input type="checkbox" id="Name4">
-<label for="Name1">Insert name</label>
-<br>
-<input type="checkbox" id="Name5">
-<label for="Name1">Insert Name</label>
-<br>
-<input type="checkbox" id="Name6">
-<label for="Name1">Insert name</label>
-<br>
-<input type="checkbox" id="Name7">
-<label for="Name1">Insert Name</label>
-<br>
-<input type="checkbox" id="Name8">
-<label for="Name1">Insert name</label>
-<br>
-<input type="checkbox" id="Name9">
-<label for="Name1">Insert Name</label>
-<br>
-<input type="checkbox" id="Name10">
-<label for="Name1">Insert name</label>
-<br>
-<input type="checkbox" id="Name11">
-<label for="Name1">Insert Name</label>
-<br>
-<input type="checkbox" id="Name12">
-<label for="Name1">Insert name</label>
+<body>
+    <h1>House Attendance</h1>
+    
+    <input type="checkbox" id="checkbox1"> insert name here<br>
+    <input type="checkbox" id="checkbox2"> insert name here<br>
+    <input type="checkbox" id="checkbox3"> insert name here<br>
+    <input type="checkbox" id="checkbox1"> insert name here<br>
+    <input type="checkbox" id="checkbox2"> insert name here<br>
+    <input type="checkbox" id="checkbox3"> insert name here<br>
+    <input type="checkbox" id="checkbox1"> insert name here<br>
+    <input type="checkbox" id="checkbox2"> insert name here<br>
+    <input type="checkbox" id="checkbox3"> insert name here<br>
+    <input type="checkbox" id="checkbox1"> insert name here<br>
+    <input type="checkbox" id="checkbox2"> insert name here<br>
+    <input type="checkbox" id="checkbox3"> insert name here<br>
+
+    <script>
+        // Function to save checkbox states to local storage
+        function saveCheckboxStates() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach((checkbox) => {
+                localStorage.setItem(checkbox.id, checkbox.checked);
+            });
+        }
+
+        // Function to load checkbox states from local storage
+        function loadCheckboxStates() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach((checkbox) => {
+                const checked = localStorage.getItem(checkbox.id) === 'true';
+                checkbox.checked = checked;
+            });
+        }
+
+        // Load states when the page loads
+        document.addEventListener('DOMContentLoaded', loadCheckboxStates);
+
+        // Save states when checkboxes change
+        document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+            checkbox.addEventListener('change', saveCheckboxStates);
+        });
+    </script>
 </body>
-<br>
-    <br>
-        <hr style="color:rgb(0,0,0)">
-    <a href="https://svhsdrama.github.io/">
-        <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
-            Return to Home Page
-        </button>
-    </a>
 </html>
