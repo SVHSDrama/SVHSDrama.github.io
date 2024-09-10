@@ -6,6 +6,7 @@
         <h1>SVHS Drama Manager</h1>
         <h3 style="color:rgb(0,0,0)">Management</h3>
         <br>
+        <hr>
         <a href="Attendance test.html">
         <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
             Attendance
