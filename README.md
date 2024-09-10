@@ -22,7 +22,7 @@
         <H3 style="color:rgb(0,0,0)">Important Forms</H3>
         <hr style="background-color:rgb(27,27,27)">
 <a href="https://forms.gle/mmDqCsZLSNkTCFu7A">
-<button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
+<button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) boarder-color:rdb(o,o,o) ">
     Hell Week and T-Shirt order form
 </button>
 </a>
