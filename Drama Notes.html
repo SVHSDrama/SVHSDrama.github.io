@@ -1,21 +1,41 @@
-<html>
-    <head>
-        <title>Drama Notes</title>
-    </head>
-    <body style="background-color:rgb(128, 128, 128);">
-        <h1 style="font-size: 50px">Drama Notes</h1>
-        <h3 style="color:rgb(0,0,0); font-size: 45px ">Notes:</h3>
-        <hr size="8"; style="color:rgb(27,27,27)">
-        <a style="font-size: 40px">
-            Insert Notes Here
-        </a>
-        <br>
-        <br>
-           <hr size="8"; style="color:rgb(27,27,27)">
-        <a href="https://svhsdrama.github.io/">
-        <button class="large-button"; style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0); font-size: 30px ">
-            Return to Home Page
-        </button>
-    </a>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Text Box Input</title>
+</head>
+<body style="background-color:rgb(128, 128, 128);">
+    <h1 style="font-size: 50px">Drama Notes</h1>
+    <a> insert notes below:</a>
+<br>
+    <textarea style="background-color: rgb(181, 176, 173)"; id="textBox" rows="50" cols="60"></textarea>
+    <br>
+    <button style="background-color:rgb(117, 79, 168)"; onclick="saveText()">Save</button>
+    <br>
+    <br>
+       <hr size="8"; style="color:rgb(27,27,27)">
+    <a href="https://svhsdrama.github.io/">
+    <button class=large-button; style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0); font-size: 30px ">
+        Return to Home Page
+    </button>
+</a>
+
+
+    <script>
+        // Function to save the text from the textarea
+        function saveText() {
+            const text = document.getElementById('textBox').value;
+            localStorage.setItem('savedText', text);
+        }
+
+        // Load saved text when the page is loaded
+        window.onload = function() {
+            const savedText = localStorage.getItem('savedText');
+            if (savedText) {
+                document.getElementById('textBox').value = savedText;
+            }
+        }
+    </script>
+</body>
 </html>
