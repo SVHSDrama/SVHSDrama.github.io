@@ -36,7 +36,7 @@
 <br>
 <br>
 <h3>Important Sheets</h3>
-<hr style="color:rgb(0,0,0)">
+<hr style="background-color:rgb(0,0,0)">
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1_QDLcyupQLAJr0KfuxQKabIUmlf9twwXlrFhsdM5JIY/edit?gid=1770155719#gid=1770155719">
 <button style="background-color:rgb(117, 79, 168); color:rgbrgb(0,0,0) ">
