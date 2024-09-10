@@ -7,7 +7,7 @@
         <hr>
         <br>
         <a href="Attendance test.html">
-        <button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+        <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
             Attendance
         </button>
         </a>
@@ -53,28 +53,28 @@
 <br>
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1VMwRlVzqlLALc_U2aSTncNZlm9Hh3WkrhDd5wq9nl8M/edit?resourcekey=&gid=35486124#gid=35486124">
-    <button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+    <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
         Names for Program and Bios and Shirts
     </button>
 </a>
 <br>
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1d1SYCDUajCq-0KVS4GPikjZU37VCEPtkH_bIhaDRc8k/edit?resourcekey=&gid=123727508#gid=123727508">
-    <button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+    <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
         Secret Buddies Manager
     </button>
 </a>
 <br>
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1cZ4fOuHlbaZJij28Z0wedoLjSf3UuXrvi4XwyQd7R7k/edit?gid=1902947174#gid=1902947174">
-    <button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+    <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
         Secret Buddies Responses
     </button>
 </a>
 <br>
 <h3>Contact Us</h3>
 <hr>
-        <a href="Contact Us.html"><button style="background-color:rgb(117, 79, 168); color:rgb(42,151,32) ">
+        <a href="Contact Us.html"><button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
         Contacts
     </button> </a>
         <!--This is how you comment-->
