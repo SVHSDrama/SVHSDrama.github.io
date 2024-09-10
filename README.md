@@ -14,7 +14,7 @@
         <br>
         <br>
         <a href="Drama Notes.html">
-            <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
+            <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); boarder-color:rdb(o,o,o) ">
             Notes
         </button>
         </a>
