@@ -84,6 +84,7 @@
             Drama Attendance tracker
         </a>
 <br>
+    <br>
 <h3 style="color:rgb(0,0,0)">Contact Us</h3>
 <hr style="background-color:rgb(27,27,27)">
         <a href="Contact Us.html"><button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
