@@ -45,14 +45,14 @@
 <hr style="background-color:rgb(27,27,27)">
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1_QDLcyupQLAJr0KfuxQKabIUmlf9twwXlrFhsdM5JIY/edit?gid=1770155719#gid=1770155719">
-<button style="background-color:rgb(117, 79, 168); color:rgbrgb(0,0,0) ">
+<button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
     Drama Merch Tracker
 </button>
 </a>
 <br>
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1BaqWD1OztTLE8-aS0YKSq6AFi9jVVkYPUn9ZyNwRWZc/edit?usp=sharing">
-    <button style="background-color:rgb(117, 79, 168); color:rgbrgb(0,0,0) ">
+    <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
         Hell Week and Shirt Orders
     </button>
 </a>
