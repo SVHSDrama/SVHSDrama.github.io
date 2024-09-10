@@ -2,7 +2,7 @@
     <head>
         <title>SVHS Drama</title>
     </head>
-    <body style="background-color::rgb(128, 128, 128);">
+    <body style="background-color:rgb(128, 128, 128);">
         <h1>SVHS Drama Manager</h1>
         <hr>
         <br>
