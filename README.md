@@ -4,7 +4,7 @@
     </head>
     <body style="background-color:rgb(128, 128, 128);">
         <h1>SVHS Drama Manager</h1>
-        <hr>
+        <hr style="background-color:rgb(27,27,27)">
         <br>
         <a href="Attendance test.html">
         <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
@@ -12,8 +12,8 @@
         </button>
         </a>
         <br>
-        <H3>Important Forms</H3>
-        <hr>
+        <H3 style="color:rgb(0,0,0)">Important Forms</H3>
+        <hr style="background-color:rgb(27,27,27)">
 <a href="https://forms.gle/mmDqCsZLSNkTCFu7A">
 <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
     Hell Week and T-Shirt order form
@@ -35,8 +35,8 @@
 </a>
 <br>
 <br>
-<h3>Important Sheets</h3>
-<hr style="background-color:rgb(0,0,0)">
+<h3 style="color:rgb(0,0,0)">Important Sheets</h3>
+<hr style="background-color:rgb(27,27,27)">
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1_QDLcyupQLAJr0KfuxQKabIUmlf9twwXlrFhsdM5JIY/edit?gid=1770155719#gid=1770155719">
 <button style="background-color:rgb(117, 79, 168); color:rgbrgb(0,0,0) ">
@@ -72,8 +72,8 @@
     </button>
 </a>
 <br>
-<h3>Contact Us</h3>
-<hr>
+<h3 style="color:rgb(0,0,0)">Contact Us</h3>
+<hr style="background-color:rgb(27,27,27)">
         <a href="Contact Us.html"><button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
         Contacts
     </button> </a>
