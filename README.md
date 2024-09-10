@@ -12,7 +12,7 @@
         </button>
         </a>
         <br>
-        <a herf="Drama Notes.html">
+        <a href="Drama Notes.html">
             <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0) ">
             Notes
         </button>
