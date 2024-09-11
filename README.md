@@ -19,7 +19,7 @@
         </button>
         </a>
         <br>
-        <H3 style="color:rgb(0,0,0)">Important Forms and Docs</H3>
+        <H3 style="color:rgb(0,0,0)">Important Forms</H3>
         <hr style="background-color:rgb(27,27,27)">
 <a href="https://forms.gle/mmDqCsZLSNkTCFu7A">
 <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
@@ -41,7 +41,7 @@
     </button>
 </a>
 <br>
-<h3 style="color:rgb(0,0,0)">Important Sheets</h3>
+<h3 style="color:rgb(0,0,0)">Important Sheets and Docs</h3>
 <hr style="background-color:rgb(27,27,27)">
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1_QDLcyupQLAJr0KfuxQKabIUmlf9twwXlrFhsdM5JIY/edit?gid=1770155719#gid=1770155719">
