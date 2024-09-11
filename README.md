@@ -20,6 +20,13 @@
         </a>
         <br>
         <br>
+        <a href="Attendance dates.html">
+<button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
+    Attendance TEST
+</button>
+</a>
+        <br>
+        <br>
          <a href="https://docs.google.com/document/d/1mIvaImykC4deMuCdB33ve4SdzGP4CQVq8Fa1SMdw6r0/edit">
         <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
             Important Dates
