@@ -84,13 +84,6 @@
         Secret Buddies Responses
     </button>
 </a>
-        <br>
-        <br>
-        <a href="https://docs.google.com/document/d/1teEXsz55trW98sLDLZngZyf2YCWK-JPcf2PTF_NNmvc/edit">
-            <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
-            Attendance tracker code 
-            </button>
-        </a>
 <br>
     <br>
 <h3 style="color:rgb(0,0,0)">Contact Us</h3>
