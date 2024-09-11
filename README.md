@@ -19,7 +19,7 @@
         </button>
         </a>
         <br>
-        <H3 style="color:rgb(0,0,0)">Important Forms</H3>
+        <H3 style="color:rgb(0,0,0)">Important Forms and Docs</H3>
         <hr style="background-color:rgb(27,27,27)">
 <a href="https://forms.gle/mmDqCsZLSNkTCFu7A">
 <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
@@ -79,9 +79,9 @@
 </a>
         <br>
         <br>
-        <a href="https://docs.google.com/spreadsheets/d/1lkzL97gq_KL6cJGNIAmpIJ2v4lW3uYghJDylB36qULc/edit?gid=1376527461#gid=1376527461">
+        <a href="https://docs.google.com/document/d/1teEXsz55trW98sLDLZngZyf2YCWK-JPcf2PTF_NNmvc/edit">
             <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
-            Drama Attendance tracker
+            Attendance tracker code 
             </button>
         </a>
 <br>
