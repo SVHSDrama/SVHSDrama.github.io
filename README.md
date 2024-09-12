@@ -11,6 +11,7 @@
             Attendance
         </button>
         </a>
+        <br>
         <a href="Cast Attendance.html">
         <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
             Cast Attendance
