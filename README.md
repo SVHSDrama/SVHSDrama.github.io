@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>SVHS Drama</title>
+        <hr size="3" style="background-color:rgb(0,0,0); border-color:rgb(0,0,0)">
     </head>
     <body style="background-color:rgb(128, 128, 128);">
         <h1>SVHS Drama Manager</h1>
