@@ -5,7 +5,7 @@
     <body style="background-color:rgb(128, 128, 128);">
         <h1>SVHS Drama Manager</h1>
         <h3 style="color:rgb(0,0,0)">Management</h3>
-        <hr style="background-color:rgb(27,27,27)">
+        <hr size="3" style="background-color:rgb(0,0,0); border-color:rgb(0,0,0)">
         <a href="Attendance test.html">
         <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
             Attendance
