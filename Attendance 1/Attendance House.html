@@ -67,7 +67,7 @@
         <br><br>
 
         <!-- Person 5 -->
-        <label for="person5">Logan Barnhard:</label>
+        <label for="person5">Isaac Hildebrand:</label>
         <select id="person5" onchange="saveAttendance('person3')">
             <option value="">--Mark Attendance--</option>
             <option value="present">Present</option>
@@ -115,7 +115,7 @@
 
         // Function to load saved attendance and count on page load
         window.onload = function() {
-            const people = ['person1', 'person2', 'person3', 'person4']; // List of people
+            const people = ['person1', 'person2', 'person3', 'person4', 'person5']; // List of people
 
             people.forEach(personId => {
                 const savedAttendance = localStorage.getItem(personId);
