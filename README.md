@@ -20,9 +20,16 @@
         </a>
         <br>
         <br>
-        <a href="Drama Notes.html">
+        <a href="Drama Notes Tech an Crew.html">
             <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
-            Notes
+            Tech/Crew Notes
+        </button>
+        </a>
+        <br>
+        <br>
+        <a href="Drama Notes Cast.html">
+            <button style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0) ">
+            Cast Notes
         </button>
         </a>
         <br>
