@@ -77,8 +77,23 @@
         <span>Present Count: <span id="presentCountPerson4">0</span></span>
         <span> | Absent Count: <span id="absentCountPerson4">0</span></span>
         <span> | Late Count: <span id="lateCountPerson4">0</span></span>
-        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person4')">Reset</button>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person5')">Reset</button>
         <br><br>
+
+        <!-- Person 6 -->
+        <label for="person6">Max Toker:</label>
+        <select id="person6" onchange="saveAttendance('person6')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson4">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson4">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson4">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person6')">Reset</button>
+        <br><br>
+        
         <hr size="8"; style="background-color:rgb(27,27,27)">
         <br>
     <a href="https://svhsdrama.github.io/">
@@ -114,7 +129,7 @@
 
         // Function to load saved attendance and count on page load
         window.onload = function() {
-            const people = ['person1', 'person2', 'person3', 'person4', 'person5']; // List of people
+            const people = ['person1', 'person2', 'person3', 'person4', 'person5', 'person6']; // List of people
 
             people.forEach(personId => {
                 const savedAttendance = localStorage.getItem(personId);
