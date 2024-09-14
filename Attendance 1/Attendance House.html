@@ -164,7 +164,7 @@
         // Function to increment the count of attendance types
         function incrementCount(personId, countType) {
             let count = parseInt(localStorage.getItem(personId + '_' + countType)) || 0;
-            count += 1;
+            count += 2;
             localStorage.setItem(personId + '_' + countType, count);
             document.getElementById(countType + capitalizeFirstLetter(personId)).innerText = count;
         }
