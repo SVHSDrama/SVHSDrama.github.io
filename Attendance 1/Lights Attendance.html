@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Tracker Lights</title>
+    <title>Drama Attendance</title>
 </head>
-<body style="background-color:rgb(128,128,128);">
+<body style="background-color:rgb(122,159,121);">
 
-    <h2>Attendance Lights</h2>
+    <h2>Backstage Attendance</h2>
 
     <div id="attendanceList">
+
         <!-- Person 1 -->
         <label for="person1">Alex Morairty:</label>
         <select id="person1" onchange="saveAttendance('person1')">
-            <option style="background-color:rgb(181,176,173)"; value="">--Mark Attendance--</option>
+            <option value="">--Mark Attendance--</option>
             <option value="present">Present</option>
             <option value="absent">Absent</option>
             <option value="late">Late</option>
@@ -22,7 +23,12 @@
         <span> | Absent Count: <span id="absentCountPerson1">0</span></span>
         <span> | Late Count: <span id="lateCountPerson1">0</span></span>
         <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person1')">Reset</button>
-        <br><br>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson1">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+        </div>
+        <br>
 
         <!-- Person 2 -->
         <label for="person2">Ciel Schnell:</label>
@@ -36,9 +42,14 @@
         <span> | Absent Count: <span id="absentCountPerson2">0</span></span>
         <span> | Late Count: <span id="lateCountPerson2">0</span></span>
         <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person2')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson2">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+        </div>
         <br><br>
 
-        <!-- Person 3 -->
+         <!-- Person 3 -->
         <label for="person3">Maxwell Wirth:</label>
         <select id="person3" onchange="saveAttendance('person3')">
             <option value="">--Mark Attendance--</option>
@@ -50,28 +61,26 @@
         <span> | Absent Count: <span id="absentCountPerson3">0</span></span>
         <span> | Late Count: <span id="lateCountPerson3">0</span></span>
         <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person3')">Reset</button>
-        <br><br>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson3">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
 
-        <!-- Person 4 -->
-        <label for="person4">Insert Name:</label>
-        <select id="person4" onchange="saveAttendance('person4')">
-            <option value="">--Mark Attendance--</option>
-            <option value="present">Present</option>
-            <option value="absent">Absent</option>
-            <option value="late">Late</option>
-        </select>
-        <span>Present Count: <span id="presentCountPerson4">0</span></span>
-        <span> | Absent Count: <span id="absentCountPerson4">0</span></span>
-        <span> | Late Count: <span id="lateCountPerson4">0</span></span>
-        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person4')">Reset</button>
-        <br><br>
-        <hr size="8"; style="background-color:rgb(27,27,27)">
+            
+
+<!-- Add more people similarly -->
+            
+            <hr size="8"; style="background-color:rgb(27,27,27)">
         <br>
-     <a href="https://svhsdrama.github.io/Attendance%20test.html">
+    <a href="https://svhsdrama.github.io/Attendance%20test.html">
         <button class="large-button"; style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0); font-size: 15px ">
             Return to Atendance Page
         </button>
-    </a>
+    </a>    
+        </div>
+        <br><br>
+
     </div>
 
     <script>
@@ -80,13 +89,41 @@
             const attendanceValue = document.getElementById(personId).value;
             localStorage.setItem(personId, attendanceValue);
 
+            const currentDate = new Date().toLocaleDateString();
+
             // Handle the different attendance types
             if (attendanceValue === 'present') {
                 incrementCount(personId, 'presentCount');
             } else if (attendanceValue === 'absent') {
                 incrementCount(personId, 'absentCount');
+                addAttendanceStatus(personId, 'Absent', currentDate);
             } else if (attendanceValue === 'late') {
+                checkAndReplaceAbsent(personId, currentDate);
                 incrementCount(personId, 'lateCount');
+                addAttendanceStatus(personId, 'Late', currentDate);
+            }
+        }
+
+        // Function to check and replace absent with late if marked on the same day
+        function checkAndReplaceAbsent(personId, currentDate) {
+            let attendanceDates = JSON.parse(localStorage.getItem(personId + '_attendanceDates')) || [];
+
+            // Remove the "Absent" status for the same day if it exists
+            const absentIndex = attendanceDates.findIndex(entry => entry.includes(`Absent - ${currentDate}`));
+
+            if (absentIndex !== -1) {
+                // Remove the absent entry
+                attendanceDates.splice(absentIndex, 1);
+                localStorage.setItem(personId + '_attendanceDates', JSON.stringify(attendanceDates));
+                updateAttendanceDatesDropdown(personId, attendanceDates);
+
+                // Decrement the absent count
+                let absentCount = parseInt(localStorage.getItem(personId + '_absentCount')) || 0;
+                if (absentCount > 0) {
+                    absentCount -= 1;
+                    localStorage.setItem(personId + '_absentCount', absentCount);
+                    document.getElementById('absentCount' + capitalizeFirstLetter(personId)).innerText = absentCount;
+                }
             }
         }
 
@@ -98,12 +135,46 @@
             document.getElementById(countType + capitalizeFirstLetter(personId)).innerText = count;
         }
 
-        // Function to load saved attendance and count on page load
+        // Function to add the current date to the list of attendance status (absent or late)
+        function addAttendanceStatus(personId, status, date) {
+            let attendanceDates = JSON.parse(localStorage.getItem(personId + '_attendanceDates')) || [];
+
+            // Add the status and date to the list
+            attendanceDates.push(`${status} - ${date}`);
+            localStorage.setItem(personId + '_attendanceDates', JSON.stringify(attendanceDates));
+
+            // Update the dropdown menu
+            updateAttendanceDatesDropdown(personId, attendanceDates);
+        }
+
+        // Function to update the attendance dropdown (absent and late dates)
+        function updateAttendanceDatesDropdown(personId, attendanceDates) {
+            const attendanceDatesDropdown = document.getElementById('attendanceDates' + capitalizeFirstLetter(personId));
+            attendanceDatesDropdown.innerHTML = '';  // Clear current dropdown
+
+
+            if (attendanceDates.length === 0) {
+                const defaultOption = document.createElement('option');
+                defaultOption.value = '';
+                defaultOption.innerText = '--No Absences or Lates--';
+                attendanceDatesDropdown.appendChild(defaultOption);
+            } else {
+                attendanceDates.forEach(entry => {
+                    const option = document.createElement('option');
+                    option.value = entry;
+                    option.innerText = entry;
+                    attendanceDatesDropdown.appendChild(option);
+                });
+            }
+        }
+
+        // Function to load saved attendance and counts on page load
         window.onload = function() {
-            const people = ['person1', 'person2', 'person3', 'person4']; // List of people
+            const people = ['person1', 'person2', 'person3']; // List of people (Add more IDs as needed)
 
             people.forEach(personId => {
                 const savedAttendance = localStorage.getItem(personId);
+
 
                 // Load saved attendance
                 if (savedAttendance) {
@@ -115,6 +186,10 @@
                     const savedCount = localStorage.getItem(personId + '_' + countType) || 0;
                     document.getElementById(countType + capitalizeFirstLetter(personId)).innerText = savedCount;
                 });
+                
+                // Load and display attendance (absent/late) dates in the dropdown
+                const savedAttendanceDates = JSON.parse(localStorage.getItem(personId + '_attendanceDates')) || [];
+                updateAttendanceDatesDropdown(personId, savedAttendanceDates);
             });
         }
 
@@ -122,20 +197,28 @@
         function capitalizeFirstLetter(string) {
             return string.charAt(0).toUpperCase() + string.slice(1);
         }
-
-        // Function to reset counters for a person
+        
+        // Function to reset counters and attendance dates for a person
         function resetCounters(personId) {
             const counts = ['presentCount', 'absentCount', 'lateCount'];
 
             counts.forEach(countType => {
                 // Reset the count in localStorage
                 localStorage.setItem(personId + '_' + countType, 0);
-                
+               
                 // Reset the displayed count
                 document.getElementById(countType + capitalizeFirstLetter(personId)).innerText = 0;
             });
+
+            // Reset attendance dates
+            localStorage.setItem(personId + '_attendanceDates', JSON.stringify([]));
+            updateAttendanceDatesDropdown(personId, []);
         }
     </script>
-
 </body>
 </html>
+
+
+
+
+
