@@ -108,7 +108,7 @@
             <br><br>
 
              <!-- Person 6 -->
-        <label for="person6">Max Toker:</label>
+        <label for="person6">Grace Zogg:</label>
         <select id="person6" onchange="saveAttendance('person6')">
             <option value="">--Mark Attendance--</option>
             <option value="present">Present</option>
@@ -126,7 +126,7 @@
             <br><br>
 
         <!-- Person 7 -->
-        <label for="person7">Max Toker:</label>
+        <label for="person7">James Harding:</label>
         <select id="person7" onchange="saveAttendance('person7')">
             <option value="">--Mark Attendance--</option>
             <option value="present">Present</option>
@@ -139,24 +139,6 @@
         <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person7')">Reset</button>
         <div>Attendance Status:
             <select id="attendanceDatesPerson7">
-                <option value="">--No Absences or Lates--</option>
-            </select>
-            <br><br>
-
-        <!-- Person 8 -->
-        <label for="person8">Max Toker:</label>
-        <select id="person8" onchange="saveAttendance('person8')">
-            <option value="">--Mark Attendance--</option>
-            <option value="present">Present</option>
-            <option value="absent">Absent</option>
-            <option value="late">Late</option>
-        </select>
-        <span>Present Count: <span id="presentCountPerson8">0</span></span>
-        <span> | Absent Count: <span id="absentCountPerson8">0</span></span>
-        <span> | Late Count: <span id="lateCountPerson8">0</span></span>
-        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person8')">Reset</button>
-        <div>Attendance Status:
-            <select id="attendanceDatesPerson8">
                 <option value="">--No Absences or Lates--</option>
             </select>
             <br><br>
@@ -265,7 +247,7 @@
 
         // Function to load saved attendance and counts on page load
         window.onload = function() {
-            const people = ['person1', 'person2', 'person3', 'person4', 'person5', 'person6', 'person7', 'person8']; // List of people (Add more IDs as needed)
+            const people = ['person1', 'person2', 'person3', 'person4', 'person5', 'person6', 'person7']; // List of people (Add more IDs as needed)
 
             people.forEach(personId => {
                 const savedAttendance = localStorage.getItem(personId);
