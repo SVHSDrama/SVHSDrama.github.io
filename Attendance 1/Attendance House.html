@@ -193,6 +193,24 @@
             </select>
             <br><br>
 
+            <!-- Person 11 -->
+        <label for="person11">Maya Samper Paton:</label>
+        <select id="person11" onchange="saveAttendance('person11')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson11">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson11">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson11">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person11')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson11">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
 <!-- Add more people similarly -->
             
             <hr size="8"; style="background-color:rgb(27,27,27)">
