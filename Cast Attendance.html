@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cast Attendance Tracker</title>
+    <title>Drama House Attendance</title>
 </head>
-<body style="background-color:rgb(128,128,128);">
+<body style="background-color:rgb(122,159,121);">
 
-    <h2>Cast Attendance</h2>
+    <h2>House Attendance</h2>
 
     <div id="attendanceList">
+
         <!-- Person 1 -->
-        <label for="person1">Insert Name:</label>
+        <label for="person1">insert name:</label>
         <select id="person1" onchange="saveAttendance('person1')">
-            <option style="background-color:rgb(181,176,173)"; value="">--Mark Attendance--</option>
+            <option value="">--Mark Attendance--</option>
             <option value="present">Present</option>
             <option value="absent">Absent</option>
             <option value="late">Late</option>
@@ -22,10 +23,15 @@
         <span> | Absent Count: <span id="absentCountPerson1">0</span></span>
         <span> | Late Count: <span id="lateCountPerson1">0</span></span>
         <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person1')">Reset</button>
-        <br><br>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson1">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+        </div>
+        <br>
 
         <!-- Person 2 -->
-        <label for="person2">Insert Name:</label>
+        <label for="person2">insert name:</label>
         <select id="person2" onchange="saveAttendance('person2')">
             <option value="">--Mark Attendance--</option>
             <option value="present">Present</option>
@@ -36,10 +42,15 @@
         <span> | Absent Count: <span id="absentCountPerson2">0</span></span>
         <span> | Late Count: <span id="lateCountPerson2">0</span></span>
         <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person2')">Reset</button>
-        <br><br>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson2">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+        </div>
+        <br>
 
-        <!-- Person 3 -->
-        <label for="person3">Insert Name:</label>
+         <!-- Person 3 -->
+        <label for="person3">insert name:</label>
         <select id="person3" onchange="saveAttendance('person3')">
             <option value="">--Mark Attendance--</option>
             <option value="present">Present</option>
@@ -50,10 +61,14 @@
         <span> | Absent Count: <span id="absentCountPerson3">0</span></span>
         <span> | Late Count: <span id="lateCountPerson3">0</span></span>
         <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person3')">Reset</button>
-        <br><br>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson3">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
 
-        <!-- Person 4 -->
-        <label for="person4">Insert Name:</label>
+            <!-- Person 4 -->
+        <label for="person4">insert name:</label>
         <select id="person4" onchange="saveAttendance('person4')">
             <option value="">--Mark Attendance--</option>
             <option value="present">Present</option>
@@ -64,14 +79,276 @@
         <span> | Absent Count: <span id="absentCountPerson4">0</span></span>
         <span> | Late Count: <span id="lateCountPerson4">0</span></span>
         <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person4')">Reset</button>
-        <br><br>
-        <hr size="8"; style="background-color:rgb(27,27,27)">
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson4">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 5 -->
+        <label for="person5">insert name:</label>
+        <select id="person5" onchange="saveAttendance('person5')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson5">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson5">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson5">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person5')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson5">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+             <!-- Person 6 -->
+        <label for="person6">insert name:</label>
+        <select id="person6" onchange="saveAttendance('person6')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson6">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson6">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson6">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person6')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson6">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+        <!-- Person 7 -->
+        <label for="person7">insert name:</label>
+        <select id="person7" onchange="saveAttendance('person7')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson7">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson7">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson7">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person7')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson7">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+        <!-- Person 8 -->
+        <label for="person8">insert name:</label>
+        <select id="person8" onchange="saveAttendance('person8')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson8">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson8">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson8">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person8')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson8">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 9 -->
+        <label for="person9">insert name:</label>
+        <select id="person9" onchange="saveAttendance('person9')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson9">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson9">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson9">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person9')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson9">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 10 -->
+        <label for="person10">insert name:</label>
+        <select id="person10" onchange="saveAttendance('person10')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson10">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson10">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson10">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person10')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson10">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+             <!-- Person 11 -->
+        <label for="person11">insert name:</label>
+        <select id="person11" onchange="saveAttendance('person11')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson11">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson11">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson11">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person11')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson11">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 12 -->
+        <label for="person12">insert name:</label>
+        <select id="person12" onchange="saveAttendance('person12')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson12">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson12">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson12">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person12')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson12">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 13 -->
+        <label for="person13">insert name:</label>
+        <select id="person13" onchange="saveAttendance('person13')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson13">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson13">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson13">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person13')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson13">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 14 -->
+        <label for="person14">insert name:</label>
+        <select id="person14" onchange="saveAttendance('person14')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson14">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson14">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson14">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person14')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson14">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 15 -->
+        <label for="person15">insert name:</label>
+        <select id="person15" onchange="saveAttendance('person15')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson15">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson15">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson15">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person15')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson152">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 16 -->
+        <label for="person16">insert name:</label>
+        <select id="person16" onchange="saveAttendance('person16')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson16">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson16">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson16">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person16')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson16">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 17 -->
+        <label for="person17">insert name:</label>
+        <select id="person17" onchange="saveAttendance('person17')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson17">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson17">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson17">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person17')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson17">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+            <!-- Person 18 -->
+        <label for="person18">insert name:</label>
+        <select id="person18" onchange="saveAttendance('person18')">
+            <option value="">--Mark Attendance--</option>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+        <span>Present Count: <span id="presentCountPerson18">0</span></span>
+        <span> | Absent Count: <span id="absentCountPerson18">0</span></span>
+        <span> | Late Count: <span id="lateCountPerson18">0</span></span>
+        <button style="background-color:rgb(255,123,123)"; onclick="resetCounters('person18')">Reset</button>
+        <div>Attendance Status:
+            <select id="attendanceDatesPerson18">
+                <option value="">--No Absences or Lates--</option>
+            </select>
+            <br><br>
+
+<!-- Add more people similarly -->
+            
+            <hr size="8"; style="background-color:rgb(27,27,27)">
         <br>
-    <a href="https://svhsdrama.github.io/">
+    <a href="https://svhsdrama.github.io/Attendance%20test.html">
         <button class="large-button"; style="background-color:rgb(117, 79, 168); color:rgb(0,0,0); border-color:rgb(0,0,0); font-size: 15px ">
-            Return to Home Page
+            Return to Atendance Page
         </button>
-    </a>
+    </a>    
+        </div>
+        <br><br>
+
     </div>
 
     <script>
@@ -80,13 +357,41 @@
             const attendanceValue = document.getElementById(personId).value;
             localStorage.setItem(personId, attendanceValue);
 
+            const currentDate = new Date().toLocaleDateString();
+
             // Handle the different attendance types
             if (attendanceValue === 'present') {
                 incrementCount(personId, 'presentCount');
             } else if (attendanceValue === 'absent') {
                 incrementCount(personId, 'absentCount');
+                addAttendanceStatus(personId, 'Absent', currentDate);
             } else if (attendanceValue === 'late') {
+                checkAndReplaceAbsent(personId, currentDate);
                 incrementCount(personId, 'lateCount');
+                addAttendanceStatus(personId, 'Late', currentDate);
+            }
+        }
+
+        // Function to check and replace absent with late if marked on the same day
+        function checkAndReplaceAbsent(personId, currentDate) {
+            let attendanceDates = JSON.parse(localStorage.getItem(personId + '_attendanceDates')) || [];
+
+            // Remove the "Absent" status for the same day if it exists
+            const absentIndex = attendanceDates.findIndex(entry => entry.includes(`Absent - ${currentDate}`));
+
+            if (absentIndex !== -1) {
+                // Remove the absent entry
+                attendanceDates.splice(absentIndex, 1);
+                localStorage.setItem(personId + '_attendanceDates', JSON.stringify(attendanceDates));
+                updateAttendanceDatesDropdown(personId, attendanceDates);
+
+                // Decrement the absent count
+                let absentCount = parseInt(localStorage.getItem(personId + '_absentCount')) || 0;
+                if (absentCount > 0) {
+                    absentCount -= 1;
+                    localStorage.setItem(personId + '_absentCount', absentCount);
+                    document.getElementById('absentCount' + capitalizeFirstLetter(personId)).innerText = absentCount;
+                }
             }
         }
 
@@ -98,12 +403,46 @@
             document.getElementById(countType + capitalizeFirstLetter(personId)).innerText = count;
         }
 
-        // Function to load saved attendance and count on page load
+        // Function to add the current date to the list of attendance status (absent or late)
+        function addAttendanceStatus(personId, status, date) {
+            let attendanceDates = JSON.parse(localStorage.getItem(personId + '_attendanceDates')) || [];
+
+            // Add the status and date to the list
+            attendanceDates.push(`${status} - ${date}`);
+            localStorage.setItem(personId + '_attendanceDates', JSON.stringify(attendanceDates));
+
+            // Update the dropdown menu
+            updateAttendanceDatesDropdown(personId, attendanceDates);
+        }
+
+        // Function to update the attendance dropdown (absent and late dates)
+        function updateAttendanceDatesDropdown(personId, attendanceDates) {
+            const attendanceDatesDropdown = document.getElementById('attendanceDates' + capitalizeFirstLetter(personId));
+            attendanceDatesDropdown.innerHTML = '';  // Clear current dropdown
+
+
+            if (attendanceDates.length === 0) {
+                const defaultOption = document.createElement('option');
+                defaultOption.value = '';
+                defaultOption.innerText = '--No Absences or Lates--';
+                attendanceDatesDropdown.appendChild(defaultOption);
+            } else {
+                attendanceDates.forEach(entry => {
+                    const option = document.createElement('option');
+                    option.value = entry;
+                    option.innerText = entry;
+                    attendanceDatesDropdown.appendChild(option);
+                });
+            }
+        }
+
+        // Function to load saved attendance and counts on page load
         window.onload = function() {
-            const people = ['person1', 'person2', 'person3', 'person4']; // List of people
+            const people = ['person1', 'person2', 'person3', 'person4', 'person5', 'person6', 'person7', 'person8', 'person9', 'person10', 'person11', 'person12' , 'person13', 'person14', 'person15', 'person16', 'person17', 'person18']; // List of people (Add more IDs as needed)
 
             people.forEach(personId => {
                 const savedAttendance = localStorage.getItem(personId);
+
 
                 // Load saved attendance
                 if (savedAttendance) {
@@ -115,6 +454,10 @@
                     const savedCount = localStorage.getItem(personId + '_' + countType) || 0;
                     document.getElementById(countType + capitalizeFirstLetter(personId)).innerText = savedCount;
                 });
+                
+                // Load and display attendance (absent/late) dates in the dropdown
+                const savedAttendanceDates = JSON.parse(localStorage.getItem(personId + '_attendanceDates')) || [];
+                updateAttendanceDatesDropdown(personId, savedAttendanceDates);
             });
         }
 
@@ -122,20 +465,23 @@
         function capitalizeFirstLetter(string) {
             return string.charAt(0).toUpperCase() + string.slice(1);
         }
-
-        // Function to reset counters for a person
+        
+        // Function to reset counters and attendance dates for a person
         function resetCounters(personId) {
             const counts = ['presentCount', 'absentCount', 'lateCount'];
 
             counts.forEach(countType => {
                 // Reset the count in localStorage
                 localStorage.setItem(personId + '_' + countType, 0);
-                
+               
                 // Reset the displayed count
                 document.getElementById(countType + capitalizeFirstLetter(personId)).innerText = 0;
             });
+
+            // Reset attendance dates
+            localStorage.setItem(personId + '_attendanceDates', JSON.stringify([]));
+            updateAttendanceDatesDropdown(personId, []);
         }
     </script>
-
 </body>
 </html>
